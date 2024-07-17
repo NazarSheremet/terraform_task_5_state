@@ -7,6 +7,7 @@ terraform {
   }
 
   backend "azurerm" {
+    use_oidc             = true
     storage_account_name = "task5matetest"
     container_name       = "task-5-content"
     key                  = "terraform.tfstate"
